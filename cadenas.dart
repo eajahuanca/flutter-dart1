@@ -5,6 +5,7 @@ main(){
   operaciones op = new operaciones();
   op.area();
   op.condicional();
+  op.iterando();
 }
 
 class operaciones{
@@ -18,5 +19,19 @@ class operaciones{
     var a = 10;
     var res = a>12? "valor de a es 10":"el valor de a es mayor a 10";
     print(res);
+  }
+
+  void iterando(){
+    outerloop:
+    for(var i=0; i<5;i++){
+      print("Innerloop: ${i}");
+      innerloop:
+      for(var j=0;j<5;j++){
+        if(j<3) break;
+        if(i==2) break innerloop;
+        if(i==4) break outerloop;
+        print("Innerloop: ${j}");
+      }
+    } 
   }
 }
