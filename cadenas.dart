@@ -6,6 +6,8 @@ main(){
   op.area();
   op.condicional();
   op.iterando();
+  op.concatenando();
+  op.listas();
 }
 
 class operaciones{
@@ -33,5 +35,18 @@ class operaciones{
         print("Innerloop: ${j}");
       }
     } 
+  }
+
+  void concatenando(){
+    String a = "Hola como";
+    String b = " estas";
+    print("Mi cadena: ${a+b}");
+  }
+  void listas(){
+    var lst = new List(3);
+    lst[0] = 12;
+    lst[1] = 13;
+    lst[2] = 41;
+    print("Mi lista: ${lst}");
   }
 }

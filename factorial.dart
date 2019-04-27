@@ -6,14 +6,10 @@ void main(){
 }
 
 Factorial(num){
-  /*var fact=1;
-  for(var fac = 1; fac <= num; fac++){
-    fact = fac * fact;
-  }*/
-  if (num==0) 
-    return 1;
-  else
+  if (num > 0) 
     return Factorial(num-1) * num;
+  else
+    return 1;
 }
 
 class Operaciones{
